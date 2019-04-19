@@ -8,18 +8,29 @@
 </head>
 <body>
     <p id="link"></p>
-    <div id="qrcode"></div>
+    <div class="container">
+        <div id="qrcode"></div>
+    </div>
     <hr>
-    <small>Copyright &copy; 2019 Kent Leo Makibulan</small>
+    <p>Copyright &copy; 2019 Kent Leo Makibulan</p>
 </body>
 <style>
     body{
         width: 200px;
     }
-    #p{
-        text-align: justify;
+    p{
+        text-align: center;
     }
-    small{
+    hr{
+        background-color: black;
+        border-width: 1px;
+        width: 90%;
+        border-style: outset;
+    }
+    #qrcode{
+        display: inline-block;
+    }
+    .container{
         text-align: center;
     }
 </style>

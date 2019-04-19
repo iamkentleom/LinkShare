@@ -1,6 +1,6 @@
 chrome.tabs.query({"active":true}, (tabs)=>{
     const url = tabs[0].url
-    document.getElementById('link').innerText = url
+    document.getElementById('link').innerHTML = url
     new QRCode(document.getElementById("qrcode"), {
         text: url,
         width: 150,
