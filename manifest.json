@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+        "name": "LinkShare",
+        "description": "Share links instantly",
+        "version": "1.0",
+        "author": "Kent Leo L. Makibulan",
+        "icons": { "16": "images/icon16.png",
+               "48": "images/icon48.png",
+              "128": "images/icon128.png" },
+        "offline_enabled": true,
+        "incognito": "split",
+        "permissions": ["tabs"],
+        "browser_action": {
+              "default_icon": {
+                "16": "images/icon16.png",
+                "24": "images/icon16.png",
+                "32": "images/icon16.png"
+              },
+              "default_title": "LinkShare",
+              "default_popup": "popup.html"
+            }
+    }
