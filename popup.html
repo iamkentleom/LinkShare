@@ -10,7 +10,13 @@
 <body>
     <p id="link"></p>
     <div class="container">
-        <div id="qrcode"></div>
+        <div class="box">
+            <div id="qrcode"></div>
+        </div>
+    </div>
+    <p></p>
+    <div class="container">
+        <button id="short">Shorten Link</button>
     </div>
     <p></p>
     <hr>
@@ -18,17 +24,17 @@
 </body>
 <style>
     body{
-        width: 300px;
-        font-family: 'Rubik', sans-serif;
+        width: 320px;
+        font-family: 'Rubik', sans-serif !important;
     }
     p, h3{
         text-align: center;
-        width: 300px;
+        width: 320px;
         word-wrap: break-word;
     }
     hr{
         height: 1px;
-        background-color: grey;
+        background-color: rgb(29,73,153);
         margin: 0px;
         padding: 0px;
         border: none;
@@ -38,6 +44,32 @@
     }
     .container{
         text-align: center;
+    }
+    .box{
+        border: 1px solid rgb(29,73,153);
+        padding-top: 10px;
+        padding-bottom: 8px;
+        border-radius: 10px;
+        width: 270px;
+        display: inline-block;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        width: 270px;
+        border: 1px solid rgb(210,149,1);
+        color: rgb(210,149,1);
+        background-color: white;
+        font-family: 'Rubik', sans-serif !important;
+        transition: 0.4s;
+    }
+    button:hover{
+        background-color: rgb(210,149,1);
+        color: white;
+        transition: 0.4s;
+    }
+    button:focus{
+        outline: none;
     }
     .li{
         color: rgb(29,73,153);
