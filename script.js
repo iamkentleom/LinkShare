@@ -3,9 +3,9 @@ chrome.tabs.query({"active":true}, (tabs)=>{
     document.getElementById('link').innerHTML = url
     new QRCode(document.getElementById("qrcode"), {
         text: url,
-        width: 150,
-        height: 150,
-        colorDark : "#1d58ac",
+        width: 250,
+        height: 250,
+        colorDark : "#1d4999",
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
     })

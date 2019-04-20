@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -11,27 +12,38 @@
     <div class="container">
         <div id="qrcode"></div>
     </div>
+    <p></p>
     <hr>
-    <p>Copyright &copy; 2019 Kent Leo Makibulan</p>
+    <h3><strong><span class="li">Link</span><span class="sh">Share</span></strong></h3>
 </body>
 <style>
     body{
-        width: 200px;
+        width: 300px;
+        font-family: 'Rubik', sans-serif;
     }
-    p{
+    p, h3{
         text-align: center;
+        width: 300px;
+        word-wrap: break-word;
     }
     hr{
-        background-color: black;
-        border-width: 1px;
-        width: 90%;
-        border-style: outset;
+        height: 1px;
+        background-color: grey;
+        margin: 0px;
+        padding: 0px;
+        border: none;
     }
     #qrcode{
         display: inline-block;
     }
     .container{
         text-align: center;
+    }
+    .li{
+        color: rgb(29,73,153);
+    }
+    .sh{
+        color: rgb(210,149,1);
     }
 </style>
 <script src="qrcode.js"></script>
