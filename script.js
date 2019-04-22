@@ -12,7 +12,6 @@ chrome.tabs.query({"active":true}, (tabs)=>{
     })
     document.getElementById('short').addEventListener('click', () => {
         xhttp.onreadystatechange = () => {
-            console.log(xhttp)
             if (xhttp.readyState == 4 && xhttp.status == 200) {
                 document.getElementById("qrcode").innerHTML = ''
                 let urlObject = JSON.parse(xhttp.responseText)
@@ -27,6 +26,8 @@ chrome.tabs.query({"active":true}, (tabs)=>{
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
                 })
+            }else if(xhttp.readyState < 4){
+                document.getElementById('short').innerHTML = `Loading...`
             }else{
                 document.getElementById('short').innerHTML = `Error. Retry?`
             }
