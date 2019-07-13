@@ -15,10 +15,16 @@
   "browser_action": {
     "default_icon": {
       "16": "images/icon16.png",
-      "24": "images/icon16.png",
-      "32": "images/icon16.png"
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
     },
     "default_title": "LinkShare",
     "default_popup": "popup.html"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["qrcode.js"]
+    }
+  ]
 }
