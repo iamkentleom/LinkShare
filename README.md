@@ -8,7 +8,7 @@ LinkShare is a browser extension that lets you share links instantly. By clickin
 | Supported Browsers | Download Link |
 |---|---|
 | Chrome | Not Yet Available |
-| Firefox | Pending |
+| Firefox | https://addons.mozilla.org/en-US/firefox/addon/link-share/ |
 
 ## License
 MIT
