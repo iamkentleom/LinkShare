@@ -20,15 +20,19 @@
     </div>
     <p></p>
     <hr>
-    <p><span class="li">Link</span><span class="sh">Share</span></p>
+    <p><span class="li">LinkShare</span></p>
 </body>
 <style>
     body{
         width: 300px;
         font-family: 'Lexend Deca', sans-serif;
+        background-image: url('images/bg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     #link{
         font-family: 'Roboto Mono', monospace;
+        color: white;
     }
     p{
         text-align: center;
@@ -51,7 +55,8 @@
         text-align: center;
     }
     .box{
-        border: 1px solid rgb(29,73,153);
+        border: 1px solid rgb(29, 73, 154);
+        background-color: white;
         padding-top: 10px;
         padding-bottom: 8px;
         border-radius: 10px;
@@ -63,27 +68,28 @@
     }
     button{
         padding: 10px;
+        border: 0;
         border-radius: 10px;
         width: 270px;
-        border: 1px solid rgb(210, 149, 1);
-        color: rgb(210,149,1);
-        background-color: white;
+        background-color: rgb(29,73,153);
+        color: white;
+        -webkit-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
+        -moz-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
+        box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
         font-family: 'Lexend Deca', sans-serif;
-        transition: 0.3s ease-out;
+        transition: 0.2s ease;
     }
     button:hover{
-        background-color: rgb(210,149,1);
-        color: white;
-        transition: 0.3s ease-in;
+        /* background-color: rgb(210,149,1); */
+        transform: translate(0px,2px);
+        box-shadow: none;
+        transition: 0.2s ease;
     }
     button:focus{
         outline: none;
     }
     .li{
         color: rgb(29,73,153);
-    }
-    .sh{
-        color: rgb(210,149,1);
     }
 </style>
 <script src="qrcode.js"></script>

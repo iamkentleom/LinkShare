@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "LinkShare",
   "description": "Share links instantly",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": "Kent Leo L. Makibulan",
   "icons": { 
     "16": "images/icon16.png",
