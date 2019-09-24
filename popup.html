@@ -45,6 +45,7 @@
     }
     #qrcode{
         display: inline-block;
+        transition: 0.5s ease-in-out;
     }
     .container{
         text-align: center;
@@ -55,22 +56,25 @@
         padding-bottom: 8px;
         border-radius: 10px;
         width: 270px;
+        -webkit-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
+        -moz-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
+        box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
         display: inline-block;
     }
     button{
         padding: 10px;
         border-radius: 10px;
         width: 270px;
-        border: 1px solid rgb(210,149,1);
+        border: 1px solid rgb(210, 149, 1);
         color: rgb(210,149,1);
         background-color: white;
         font-family: 'Lexend Deca', sans-serif;
-        transition: 0.4s;
+        transition: 0.3s ease-out;
     }
     button:hover{
         background-color: rgb(210,149,1);
         color: white;
-        transition: 0.4s;
+        transition: 0.3s ease-in;
     }
     button:focus{
         outline: none;
