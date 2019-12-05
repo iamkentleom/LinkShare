@@ -11,13 +11,13 @@ chrome.tabs.query({"active":true}, (tabs) => {
     })
     document.getElementById('short').addEventListener('click', () => {
         document.getElementById('short').innerText = `Loading...`
-        fetch(`https://is.gd/create.php?format=json&url=${encodeURIComponent(url)}`)
+        fetch(`https://tinyurl-rest-wrapper.herokuapp.com/shorten?url=${encodeURIComponent(url)}`)
             .then(res => res.json())
             .then(json => {
-                document.getElementById('link').innerText = json.shorturl
+                document.getElementById('link').innerText = json.tinyurl
                 document.getElementById('qrcode').innerHTML = ''
                 new QRCode(document.getElementById("qrcode"), {
-                    text: json.shorturl,
+                    text: json.tinyurl,
                     width: 250,
                     height: 250,
                     colorDark : "#1d4999",
