@@ -1,4 +1,4 @@
-chrome.tabs.query({"active":true}, (tabs) => {
+browser.tabs.query({"active":true}, (tabs) => {
     const url = tabs[0].url
     document.getElementById('link').innerText = url
     new QRCode(document.getElementById("qrcode"), {
