@@ -12,6 +12,9 @@
     <div class="container">
         <div class="box">
             <div id="qrcode"></div>
+            <div class="expand" id="expand">
+                <img src="images/expand.svg" alt="expand">
+            </div>
         </div>
     </div>
     <p></p>
@@ -42,7 +45,7 @@
     }
     hr{
         height: 1px;
-        background-color: rgb(29,73,153);
+        background-color: rgb(29, 73, 153);
         margin: 0px;
         padding: 0px;
         border: none;
@@ -55,6 +58,7 @@
         text-align: center;
     }
     .box{
+        position: relative;
         border: 1px solid rgb(29, 73, 154);
         background-color: white;
         padding-top: 10px;
@@ -65,6 +69,35 @@
         -moz-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
         box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
         display: inline-block;
+        transition: all 0.3s ease;
+    }
+    .box:hover .expand{
+        visibility: visible;
+        transition: all 0.3s ease;
+    }
+    .expand{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 8px;
+        top: 8px;
+        padding: 4px;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 4px;
+        visibility: hidden;
+        -webkit-box-shadow: -10px 10px 50px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: -10px 10px 50px 0px rgba(0,0,0,0.2);
+        box-shadow: -10px 10px 50px 0px rgba(0,0,0,0.2);
+        z-index: 100;
+        transition: all 0.3s ease;
+    }
+    .expand:hover{
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .expand > img{
+        height: 25px;
+        width: 25px;
     }
     button{
         padding: 10px;

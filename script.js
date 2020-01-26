@@ -30,4 +30,10 @@ browser.tabs.query({"active":true}, (tabs) => {
                 document.getElementById('short').innerText = `Error. Retry?`
             })
     })
+    document.getElementById('expand').addEventListener('click', () => {
+        const new_url = document.getElementById('link').innerText
+        window.linkshare = new_url
+        let win = window.open('index.html', '_blank')
+        win.focus()
+    })
 })

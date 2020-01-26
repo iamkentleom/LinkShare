@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/icon16.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto+Mono&display=swap" rel="stylesheet"> 
+    <title>LinkShare</title>
+</head>
+<body>
+    <div class="container">
+        <div class="pre-box">
+            <p id="link"></p>
+            <br/>
+            <div class="box">
+                <div id="qrcode"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body{
+        font-family: 'Lexend Deca', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('images/bg-expand.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #link{
+        color: rgb(255, 255, 255);
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.4rem;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    #qrcode{
+        display: inline-block;
+        transition: 0.5s ease-in-out;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pre-box{
+        text-align: center;
+    }
+    .box{
+        position: relative;
+        border: 1px solid rgb(29, 73, 154);
+        background-color: white;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 8px;
+        border-radius: 10px;
+        -webkit-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
+        -moz-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
+        box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+</style>
+<script src="qrcode.js"></script>
+<script src="page-script.js"></script>
+</html>
