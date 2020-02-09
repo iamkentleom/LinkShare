@@ -17,7 +17,7 @@ LinkShare is a browser extension that lets you share links instantly. By clickin
 | Firefox | https://addons.mozilla.org/en-US/firefox/addon/link-share/ |
 
 ## Dependencies
-LinkShare is built with [qrcode.js](https://davidshimjs.github.io/qrcodejs/) and [is.gd](https://is.gd/apishorteningreference.php) url shortener
+LinkShare is built with [qrcode.js](https://davidshimjs.github.io/qrcodejs/) and [tinyurl](https://tinyurl.com/) url shortener using [tinyurl wrapper](https://tinyurl-rest-wrapper.herokuapp.com/)
 
 ## License
 MIT
