@@ -23,7 +23,7 @@
     </div>
     <p></p>
     <hr>
-    <p><span class="li">LinkShare</span></p>
+    <div class="footer"><small>LinkShare v1.4.0</small></div>
 </body>
 <style>
     body{
@@ -110,18 +110,25 @@
         -moz-box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
         box-shadow: 2px 2px 20px -8px rgba(29,74,153,1);
         font-family: 'Lexend Deca', sans-serif;
-        transition: 0.2s ease;
+        transition: 0.3s ease;
     }
     button:hover{
-        transform: translate(0px,2px);
+        transform: translate(0px,1px);
         box-shadow: none;
-        transition: 0.2s ease;
+        transition: 0.3s ease;
     }
     button:focus{
         outline: none;
     }
-    .li{
+    button:disabled{
+        background-color: #6c8ac0;
+    }
+    .footer{
         color: rgb(29,73,153);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6px;
     }
 </style>
 <script src="qrcode.js"></script>

@@ -10,7 +10,9 @@ browser.tabs.query({"active":true}, (tabs) => {
         correctLevel : QRCode.CorrectLevel.H
     })
     document.getElementById('short').addEventListener('click', () => {
-        document.getElementById('short').innerText = `Loading...`
+        const btn = document.getElementById('short')
+        btn.innerText = `Loading...`
+        btn.disabled = true
         fetch(`https://tinyurl-rest-wrapper.herokuapp.com/shorten?url=${encodeURIComponent(url)}`)
             .then(res => res.json())
             .then(json => {
@@ -24,10 +26,12 @@ browser.tabs.query({"active":true}, (tabs) => {
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
                 })
-                document.getElementById('short').innerText = `Shorten Link`
+                btn.innerText = `Shorten Link`
+                btn.disabled = false
             })
             .catch(() => {
-                document.getElementById('short').innerText = `Error. Retry?`
+                btn.innerText = `Error. Retry?`
+                btn.disabled = false
             })
     })
     document.getElementById('expand').addEventListener('click', () => {
