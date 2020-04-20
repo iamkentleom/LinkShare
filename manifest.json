@@ -10,7 +10,7 @@
     "128": "images/icon128.png"
   },
   "incognito": "not_allowed",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "clipboardWrite"],
   "browser_action": {
     "default_icon": {
       "16": "images/icon16.png",
