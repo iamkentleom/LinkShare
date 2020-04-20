@@ -8,22 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="link"></p>
+    <div class="link-box" id="link-box" title="Copy to clipboard">
+        <p id="link"></p>
+    </div>
+    <p></p>
     <div class="container">
         <div class="box">
             <div id="qrcode"></div>
-            <div class="expand" id="expand">
+            <div class="expand" id="expand" title="Expand this window">
                 <img src="images/expand.svg" alt="expand">
             </div>
         </div>
     </div>
     <p></p>
     <div class="container">
-        <button id="short">Shorten Link</button>
+        <button id="short" title="Shorten the link">Shorten Link</button>
     </div>
     <p></p>
     <hr>
-    <div class="footer"><small>LinkShare v1.4.0</small></div>
+    <div class="footer"><small>LinkShare v1.5.0</small></div>
 </body>
 <style>
     body{
@@ -56,6 +59,16 @@
     }
     .container{
         text-align: center;
+    }
+    .link-box{
+        cursor: pointer;
+    }
+    .link-box:hover{
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 5px;
+    }
+    .link-box:active{
+        background-color: rgba(255, 255, 255, 0.5);
     }
     .box{
         position: relative;

@@ -11,7 +11,9 @@
 <body>
     <div class="container">
         <div class="pre-box">
-            <p id="link"></p>
+            <div class="link-box" id="link-box" title="Copy to clipboard">
+                <p id="link"></p>
+            </div>
             <br/>
             <div class="box">
                 <div id="qrcode"></div>
@@ -48,6 +50,16 @@
     }
     .pre-box{
         text-align: center;
+    }
+    .link-box{
+        cursor: pointer;
+    }
+    .link-box:hover{
+        background-color: rgba(255, 255, 255, 0.25);
+        border-radius: 5px;
+    }
+    .link-box:active{
+        background-color: rgba(255, 255, 255, 0.5);
     }
     .box{
         position: relative;

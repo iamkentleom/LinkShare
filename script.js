@@ -40,4 +40,10 @@ browser.tabs.query({"active":true}, (tabs) => {
         let win = window.open('index.html', '_blank')
         win.focus()
     })
+    document.getElementById('link-box').addEventListener('click', () => {
+        const url_copy = document.getElementById('link').innerText
+        navigator.clipboard.writeText(url_copy)
+            .then()
+            .catch()
+    })
 })
